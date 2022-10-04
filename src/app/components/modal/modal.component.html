@@ -1,0 +1,17 @@
+<h1 mat-dialog-title></h1>
+<div mat-dialog-content class="modal">
+  <app-calendar [data]="_date" (newDateEvent)="viewItem($event)"></app-calendar>
+  <div class="modal__list">
+    <div class="modal__list-item__first">
+      <span> {{ _date.startHour }} - {{ _date.endHour }}</span>
+      <span>{{ _date.state }}</span>
+    </div>
+    <div class="modal__list-item__last">
+      <span>{{ _date.dayCelkemHours }}</span>
+      <span>{{ _date.dayCelkemMoney }}</span>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+  </div>
+</div>

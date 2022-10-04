@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Hi Aleksey</h1>
+<div mat-card-content>
+  <p>Wfsafsafsafasfsfsf sd sa d</p>
+  <mat-form-field appearance="outline">
+    <mat-label>Favorite</mat-label>
+    <input matInput [matDatepicker]="dp" [formControl]="startDate" />
+    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+    <mat-datepicker #dp></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Select an option</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let h of hour" [value]="hour">{{ h }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <p>You selected: {{ selected }}</p>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button>Відмінити</button>
+  <button mat-button cdkFocusInitial>Зберегти</button>
+</div>

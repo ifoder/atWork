@@ -1,0 +1,58 @@
+<mat-card class="desktop-card">
+  <div class="list">
+    <mat-icon class="list__item-icon" fontIcon="list"></mat-icon>
+
+    <div class="list__item-first">Текущие записи</div>
+    <div class="list__item-last">
+      <span>{{ celkemDates }}</span>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="list">
+    <div class="list__item-first">Сегодня</div>
+    <div class="list__item-second">{{ dayOfWeek }}</div>
+    <div class="list__item-last">
+      <span>{{ today.dayCelkemHours }}</span>
+      <span>{{ today.dayCelkemMoney }}</span>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="list">
+    <div class="list__item-first">Неделя</div>
+    <div class="list__item-second">№{{ numberOfWeek }}</div>
+    <div class="list__item-last">
+      <span>{{ week?.weekCelkemHours }}</span>
+      <span>{{ week?.weekCelkemMoney }}</span>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="list">
+    <div class="list__item-first">Месяц</div>
+    <div class="list__item-second">{{ month?.month }}</div>
+    <div class="list__item-last">
+      <span>{{ month?.monthCelkemHours }}</span>
+      <span>{{ month?.monthCelkemMoney }}</span>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="list">
+    <div class="list__item-footer">
+      <div class="list__item-footer-drop">
+        <mat-icon class="list__item-icon" fontIcon="image"></mat-icon>
+        <div>6</div>
+      </div>
+      <div class="list__item-footer-drop">
+        <mat-icon class="list__item-icon" fontIcon="image"></mat-icon>
+        <div>6</div>
+      </div>
+      <div class="list__item-footer-drop">
+        <mat-icon class="list__item-icon" fontIcon="image"></mat-icon>
+        <div>6</div>
+      </div>
+      <div class="list__item-footer-drop">
+        <mat-icon class="list__item-icon" fontIcon="image"></mat-icon>
+        <div>6</div>
+      </div>
+    </div>
+  </div>
+</mat-card>

@@ -1,0 +1,53 @@
+.desktop-card {
+  min-height: 200px;
+  min-width: 400px;
+  padding: 0 15px 15px 15px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  // justify-content: space-between;
+  align-items: center;
+  height: 50px;
+
+  &__item {
+    align-items: center;
+
+    &-icon {
+      color: rgba(159, 185, 255, 0.753);
+      font-size: 22px;
+      display: contents;
+    }
+
+    &-first {
+      flex-grow: 1;
+    }
+
+    &-second {
+      flex-grow: 5;
+      color: gray;
+    }
+
+    &-last {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      right: 15px;
+      :last-child {
+        color: rgba(159, 185, 255, 0.753);
+      }
+    }
+    &-footer {
+      padding-top: 20px;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      &-drop {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

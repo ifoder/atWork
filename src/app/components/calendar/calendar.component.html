@@ -1,0 +1,10 @@
+<mat-card class="demo-inline-calendar-card" cdkDrag>
+  <mat-calendar
+    [(selected)]="selected"
+    [formControl]="date"
+    (selectedChange)="onClick($event)"
+    [dateClass]="dateClass"
+  ></mat-calendar>
+</mat-card>
+
+<!--  -->

@@ -1,0 +1,77 @@
+.demo-inline-calendar-card {
+  width: 400px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+button.example-custom-date-class {
+  background: rgba(0, 255, 76, 0.171);
+  border-radius: 100%;
+}
+.modal {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+  margin: auto;
+  padding: 20px;
+
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 350px;
+    background-color: rgb(80, 80, 80);
+
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+
+    &-title {
+      padding: 10px;
+      width: 100%;
+      background-color: gray;
+    }
+    &-item {
+      align-items: center;
+      justify-content: center;
+
+      &__icon {
+        color: rgba(159, 185, 255, 0.753);
+        font-size: 22px;
+      }
+      &__first {
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+
+        flex-direction: column;
+        :last-child {
+          color: rgb(153, 153, 153);
+        }
+      }
+
+      &__second {
+        display: inline-flex;
+        align-items: center;
+        flex-grow: 5;
+      }
+
+      &__last {
+        height: 50px;
+        display: flex;
+        font-size: 15px;
+        color: rgb(235, 199, 0);
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+
+        :last-child {
+          color: rgba(0, 160, 8, 0.815);
+        }
+      }
+    }
+  }
+}

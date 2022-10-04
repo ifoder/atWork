@@ -1,0 +1,34 @@
+<mat-card class="dashboard-card">
+  <mat-button-toggle-group
+    class="dashboard-card__toggle"
+    appearance="legacy"
+    name="fontStyle"
+    aria-label="Font Style"
+    [(ngModel)]="dateViewType"
+    (click)="view()"
+  >
+    <mat-button-toggle checked value="day">День</mat-button-toggle>
+    <mat-button-toggle value="week">Неделя</mat-button-toggle>
+    <mat-button-toggle value="month">Месяц</mat-button-toggle>
+    <mat-button-toggle value="year">Год</mat-button-toggle>
+  </mat-button-toggle-group>
+  <div *ngFor="let days of dataView">
+    <div class="dashboard-card__list-title">{{ days.title }}</div>
+    <div *ngFor="let day of days.view">
+      <div (click)="openDialog(day.data)" class="dashboard-card__list">
+        <div class="dashboard-card__list-item__first">{{ day.firstItem }}</div>
+        <div class="dashboard-card__list-item__second">
+          <mat-icon
+            class="dashboard-card__list-item__icon"
+            fontIcon="timer"
+          ></mat-icon>
+          {{ day.secondItem }}
+        </div>
+        <div class="dashboard-card__list-item__last">
+          <span>{{ day.rightTopItem }}</span>
+          <span>{{ day.rightBottomItem }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>

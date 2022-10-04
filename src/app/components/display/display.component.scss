@@ -1,0 +1,41 @@
+.view-card {
+  min-height: 200px;
+  min-width: 400px;
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.clock {
+  font-weight: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__hmm {
+    margin: 10px;
+    font-size: 60px;
+  }
+
+  &__ss {
+    position: absolute;
+    padding-left: 170px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: gray;
+  }
+
+  &__day {
+    margin: 10px;
+    flex: 1 100%;
+  }
+}
+
+.button-add {
+  background-color: rgba(76, 123, 253, 0.753);
+  height: 36px;
+  min-width: 350px;
+}

@@ -1,0 +1,11 @@
+<mat-card class="view-card">
+  <div class="clock">
+    <span class="clock__hmm">{{ hmm }}</span>
+    <span class="clock__ss">{{ ss }}</span>
+    <span class="clock__day">{{ dayWeek }} , {{ mmmm }}</span>
+  </div>
+
+  <button mat-button class="button-add" (click)="openDialog()">
+    Новая запись
+  </button>
+</mat-card>

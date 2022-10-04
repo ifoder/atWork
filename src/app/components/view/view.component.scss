@@ -1,0 +1,9 @@
+.view-cards {
+  margin: auto;
+  max-width: 1200px;
+  align-items: none !important;
+
+  &__desktop {
+    align-items: flex-start;
+  }
+}
